@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "juuxel.sodiumbiomeblendingfix.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "LinearColorBlenderMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
