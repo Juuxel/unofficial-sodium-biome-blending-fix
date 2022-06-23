@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "sodium_biome_blending_fix",
+  "id": "unofficial_sodium_biome_blending_fix",
   "version": "${version}",
 
   "name": "Unofficial Sodium Biome Blending Fix",
@@ -10,7 +10,7 @@
   ],
 
   "license": "LGPL-3.0-only",
-  "icon": "assets/sodium_biome_blending_fix/icon.png",
+  "icon": "assets/unofficial_sodium_biome_blending_fix/icon.png",
 
   "environment": "client",
   "entrypoints": {
@@ -19,7 +19,7 @@
     ]
   },
   "mixins": [
-    "sodium_biome_blending_fix.mixins.json"
+    "unofficial_sodium_biome_blending_fix.mixins.json"
   ],
 
   "depends": {

@@ -26,7 +26,7 @@ public record Config(List<String> blockClassWhitelist, List<Identifier> blockIdW
             Identifier.CODEC.listOf().fieldOf("block_id_whitelist").forGetter(Config::blockIdWhitelist)
         ).apply(instance, Config::new)
     );
-    private static final Logger LOGGER = LoggerFactory.getLogger("sodium_biome_blending_fix");
+    private static final Logger LOGGER = LoggerFactory.getLogger(SodiumBiomeBlendingFix.ID);
     private static final String[] DEFAULT_CLASS_NAMES = {
         "net.minecraft.class_2397", // LeavesBlock
         "net.minecraft.class_2372", // GrassBlock
@@ -39,7 +39,7 @@ public record Config(List<String> blockClassWhitelist, List<Identifier> blockIdW
         "minecraft:water",
         "minecraft:water_cauldron",
     };
-    private static final String FILE_NAME = "sodium_biome_blending_fix.json";
+    private static final String FILE_NAME = SodiumBiomeBlendingFix.ID + ".json";
     public static final Supplier<Config> INSTANCE = Suppliers.memoize(Config::load);
 
     private static Config createDefault() {

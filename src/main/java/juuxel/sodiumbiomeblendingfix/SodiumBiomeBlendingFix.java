@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public final class SodiumBiomeBlendingFix implements ModInitializer {
+    public static final String ID = "unofficial_sodium_biome_blending_fix";
     private static final Object2BooleanMap<Block> whitelistCache = new Object2BooleanOpenHashMap<>();
 
     @Override
