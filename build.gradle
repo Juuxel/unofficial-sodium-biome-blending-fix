@@ -33,7 +33,9 @@ dependencies {
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-    modImplementation "maven.modrinth:sodium:mc1.18.2-0.4.1"
+    modImplementation "maven.modrinth:sodium:$project.sodium_version"
+    modLocalRuntime "net.fabricmc.fabric-api:fabric-api:$project.fabric_api_version"
+    localRuntime "org.joml:joml:1.10.2"
 }
 
 processResources {
