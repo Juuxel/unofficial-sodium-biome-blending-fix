@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.12-SNAPSHOT'
+    id 'fabric-loom' version '1.1-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -35,7 +35,6 @@ dependencies {
 
     modImplementation "maven.modrinth:sodium:$project.sodium_version"
     modLocalRuntime "net.fabricmc.fabric-api:fabric-api:$project.fabric_api_version"
-    localRuntime "org.joml:joml:1.10.2"
 }
 
 processResources {

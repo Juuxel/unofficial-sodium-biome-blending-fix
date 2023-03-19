@@ -6,8 +6,8 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.MappingResolver;
 import net.minecraft.block.Block;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public final class SodiumBiomeBlendingFix implements ModInitializer {
     public static final String ID = "unofficial_sodium_biome_blending_fix";
@@ -23,7 +23,7 @@ public final class SodiumBiomeBlendingFix implements ModInitializer {
             MappingResolver resolver = FabricLoader.getInstance().getMappingResolver();
 
             // 1. Try ID lookup
-            Identifier blockId = Registry.BLOCK.getId(block);
+            Identifier blockId = Registries.BLOCK.getId(block);
 
             for (Identifier id : Config.INSTANCE.get().blockIdWhitelist()) {
                 if (blockId.equals(id)) {
